@@ -1,0 +1,50 @@
+{
+  "name": "skillzl-todo",
+  "description": "Your local todo list, now using React ⚛️",
+  "version": "1.0.0",
+  "author": "skillzl <admin@skillzl.cash>",
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "lint": "eslint --cache --fix \"./**/*.{js,jsx}\"",
+    "start": "react-scripts start",
+    "validate": "yarn lint"
+  },
+  "dependencies": {
+    "@sindresorhus/class-names": "^1",
+    "modern-css-reset": "^1",
+    "node-sass": "^4",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-scripts": "4",
+    "web-vitals": "^1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4",
+    "@typescript-eslint/parser": "^4",
+    "eslint": "^7",
+    "eslint-config-kentcdodds": "^17",
+    "eslint-config-prettier": "^8",
+    "eslint-plugin-jsx-a11y": "^6",
+    "eslint-plugin-prettier": "^3",
+    "eslint-plugin-react": "^7",
+    "eslint-plugin-simple-import-sort": "^7",
+    "husky": "^4",
+    "lint-staged": "^10",
+    "prettier": "^2",
+    "typescript": "^4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "license": "ISC"
+}

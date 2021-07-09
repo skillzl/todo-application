@@ -1,0 +1,80 @@
+.todos {
+  list-style-type: none;
+}
+
+.todo {
+  background-color: #101d29;
+  display: flex;
+  padding: 1rem;
+  text-align: left;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0b1620;
+  }
+
+  &:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  &:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+
+  &:not(:last-child) {
+    border-bottom: 2px solid #111;
+  }
+
+  span {
+    flex-grow: 1;
+  }
+
+  button {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 0 0 0 1rem;
+
+    &.mark {
+      color: hsl(120, 79%, 34%);
+    }
+
+    &.delete {
+      color: rgb(233, 44, 44);
+    }
+  }
+}
+
+.todo.done {
+  background-color: #0a1724;
+  color: #aaa;
+
+  span {
+    text-decoration: line-through;
+  }
+
+  &:hover {
+    background-color: #0b1620;
+  }
+}
+
+.todo.input {
+  input[type="text"] {
+    background: none;
+    border: none;
+    color: inherit;
+    flex-grow: 1;
+  }
+
+  button {
+    display: none;
+
+    &.visible {
+      display: initial;
+    }
+  }
+}
