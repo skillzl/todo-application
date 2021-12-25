@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/skillzl/todo-applicationstatic/css/main.23623bde.css",
+    "main.js": "/skillzl/todo-applicationstatic/js/main.2c44e517.js",
+    "static/js/787.5e4e84a8.chunk.js": "/skillzl/todo-applicationstatic/js/787.5e4e84a8.chunk.js",
+    "index.html": "/skillzl/todo-applicationindex.html",
+    "main.23623bde.css.map": "/skillzl/todo-applicationstatic/css/main.23623bde.css.map",
+    "main.2c44e517.js.map": "/skillzl/todo-applicationstatic/js/main.2c44e517.js.map",
+    "787.5e4e84a8.chunk.js.map": "/skillzl/todo-applicationstatic/js/787.5e4e84a8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23623bde.css",
+    "static/js/main.2c44e517.js"
+  ]
+}

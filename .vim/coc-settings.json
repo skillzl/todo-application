@@ -1,5 +1,0 @@
-{
-  "codeLens.enable": true,
-  "eslint.packageManager": "yarn",
-  "npm.binPath": "yarn"
-}
