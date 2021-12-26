@@ -1,0 +1,156 @@
+.root {
+  align-items: center;
+  background-color: #101d29;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.625rem 0;
+  padding: 0.625rem 0.9375rem;
+  position: relative;
+  width: 100%;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.5625rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.root:not(:first-child) {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.root::before {
+  content: '';
+  box-shadow: 0 3px 6px 0 rgba(69, 226, 64, 0.27);
+  background-color: #5eeb5a;
+  width: 4px;
+  border-radius: 0.3125rem 0 0 0.3125rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.label {
+  color: #dcdaf0;
+  cursor: pointer;
+  margin: 0.3125rem;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all .3s ease-in-out;
+}
+
+.checkbox {
+  position: relative;
+  top: 0.125rem;
+  margin: 0 1.875rem 0 0;
+  cursor: pointer;
+}
+
+.checkbox::before,
+.checkbox::after {
+  content: "";
+  position: absolute;
+  transition: all .3s ease-in-out;
+  border: 2px solid #49ec51;
+}
+
+.checkbox::before {
+  border-radius: 50%;
+  height: 1.25rem;
+  top: -4px;
+  left: 0;
+  width: 1.25rem;
+  z-index: 1;
+}
+
+.checkbox::after {
+  top: 0.1875rem;
+  left: 0.3125rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  z-index: 2;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.completed {
+  opacity: 0.6;
+}
+
+.completed::before {
+  background-color: #d61c1c;
+  box-shadow: 0 3px 6px 0 rgba(226, 64, 64, 0.27);
+}
+
+.completed .label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.completed .checkbox::before {
+  background-color: #d81f1f;
+  border-color: #d31616;
+}
+
+.completed .checkbox::after {
+  transform: rotate(-50deg);
+  height: 0.3125rem;
+  border-color: #fff;
+  border-top-style: none;
+  border-right-style: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.remove {
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  background-color: rgba(241, 219, 219, 0.4);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  transition: all .3s ease-in-out;
+  width: 32px;
+}
+
+.remove svg path {
+  fill: #fb3636;
+}
+
+.remove small {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.remove,
+.remove:focus,
+.remove:active {
+  outline: none;
+}
+
+.remove:focus,
+.remove:hover {
+  background-color: rgba(255, 207, 207, 0.8);
+}
+
+@media (min-width: 960px) {
+  .remove {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .root:hover .remove {
+    opacity: 1;
+    visibility: visible;
+  }
+}
