@@ -42,5 +42,5 @@
 
 .input:focus,
 .input:active {
-  border-color: rgba(0, 0, 0, .6);
+  border-color: rgba(7, 7, 7, 0.6);
 }

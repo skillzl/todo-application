@@ -18,8 +18,8 @@
 
 .root::before {
   content: '';
-  box-shadow: 0 3px 6px 0 rgba(69, 226, 64, 0.27);
-  background-color: #5eeb5a;
+  box-shadow: 0 3px 6px 0 rgba(58, 189, 53, 0.27);
+  background-color: #4cd447;
   width: 4px;
   border-radius: 0.3125rem 0 0 0.3125rem;
   top: 0;
@@ -140,7 +140,7 @@
 
 .remove:focus,
 .remove:hover {
-  background-color: rgba(255, 207, 207, 0.8);
+  background-color: rgba(236, 213, 213, 0.8);
 }
 
 @media (min-width: 960px) {
