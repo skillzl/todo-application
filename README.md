@@ -25,5 +25,3 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](LICENSE)
-
-![Alt](https://repobeats.axiom.co/api/embed/73d81a3dc96733598e337d5a460cfedebc292f09.svg "Repobeats analytics image")
